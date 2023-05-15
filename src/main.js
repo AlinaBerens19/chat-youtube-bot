@@ -1,11 +1,12 @@
-require('dotenv').config();
-
 import { Telegraf, session  } from 'telegraf'
 import { message } from 'telegraf/filters'
 import { code } from 'telegraf/format'
 import { ogg } from './ogg.js'
 import { openai } from './openai.js'
 import { removeFile } from './utils.js'
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 
 const INITIAL_SESSION = {
